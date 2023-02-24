@@ -8,6 +8,7 @@ export const OffersContainer = styled.section`
 
   width: 100%;
   height: 100vh;
+  max-height: 1440px;
 `;
 
 export const Container = styled.div`
@@ -19,8 +20,8 @@ export const Container = styled.div`
   justify-content: space-evenly;
   padding: 5px;
 
-  max-width: 1920px;
-  max-height: 1000px;
+  max-width: 2560px;
+  max-height: 1440px;
 
   background-color: ${({ theme }) => theme.colors.purple};
 
