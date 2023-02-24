@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
   background-color: ${props => props.theme.colors.purple};
   color: ${props => props.theme.fontColors.white};
   max-width: 100%;
-  height: 600px;
+  padding: 56px 0 32px 0;
 
   a {
     text-decoration: none;
