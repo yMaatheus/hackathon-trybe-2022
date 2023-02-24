@@ -15,9 +15,6 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    backend: {
-      loadPath: './src/i18n/locales/{{lng}}/{{ns}}.json', // Specify where backend will find translation files.
-    },
     detection: options,
     ns: ['common'],
     defaultNS: 'common',
