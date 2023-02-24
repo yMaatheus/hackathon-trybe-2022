@@ -36,45 +36,41 @@ export const AboutContent = styled.div`
   top: 0;
   left: 0;
 
-
-  background: linear-gradient(90deg,black, rgba(2,2,2, 90%), transparent);
-  `
+  background: linear-gradient(90deg, black, rgba(2, 2, 2, 90%), transparent);
+`;
 
 export const AboutTitle = styled.h1`
-    padding: 0 6rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    color: ${props => props.theme.colors.white};
-    width: 60%;
-    min-width: 600px;
-    height: 100%;
-    font-size: 3rem;
-    text-shadow: 2px 2px 3px ${props => props.theme.colors.purpleLight};
-    span {
-      font-size: 2rem;
-      text-shadow: none;
-      line-height: 1;
-    }
-  `
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  color: ${props => props.theme.colors.white};
+  width: 60%;
+  min-width: 600px;
+  height: 100%;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px ${props => props.theme.colors.purpleLight};
+  span {
+    font-size: 2rem;
+    text-shadow: none;
+    line-height: 1;
+  }
+`;
 
 export const Button = styled.button`
-    align-self: flex-start;
-    border-radius: 0.5rem;
-    margin-top: 3rem;
-    padding: 2rem 4rem;
-    background: ${props => props.theme.colors.purpleDark};
-    color: ${props => props.theme.colors.white};
-    font-size: 2rem;
-    line-height: .1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  align-self: flex-start;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  padding: 2rem 4rem;
+  background: ${props => props.theme.colors.purpleDark};
+  color: ${props => props.theme.colors.white};
+  font-size: 2rem;
+  line-height: 0.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
-    &:hover {
-    }
-     `
-
-
-
+  &:hover {
+  }
+`;

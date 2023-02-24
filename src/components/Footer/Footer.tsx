@@ -14,13 +14,11 @@ export const Footer: FC = () => {
   return (
     <S.FooterContainer>
       <S.FooterContent>
-
         <S.LogoContent>
           <Logo />
         </S.LogoContent>
 
         <S.ItemsWrapper>
-
           <S.ItemContent>
             <h3>{t('texts.wineClub')}</h3>
             <ul>
@@ -33,7 +31,7 @@ export const Footer: FC = () => {
           <S.ItemContent>
             <h3>{t('texts.developedBy')}</h3>
             <ul>
-              {footerLinks.authors.map((author) => (
+              {footerLinks.authors.map(author => (
                 <li key={author.id}>
                   <a href={author.link}>{author.name}</a>
                 </li>
@@ -43,9 +41,7 @@ export const Footer: FC = () => {
 
           <S.ItemContent>
             <h3>{t('texts.contactUs')}</h3>
-            <p>
-              {t('texts.businessHours')}
-            </p>
+            <p>{t('texts.businessHours')}</p>
             <ul>
               <li>
                 {t('texts.phone')} <b> {footerLinks.phoneNumber.number}</b>
@@ -64,9 +60,7 @@ export const Footer: FC = () => {
               <SocialMediaLinks />
             </S.SocialNetworks>
           </S.ItemContent>
-
         </S.ItemsWrapper>
-
       </S.FooterContent>
 
       <S.FooterContent>
@@ -75,7 +69,6 @@ export const Footer: FC = () => {
         </S.Copyright>
       </S.FooterContent>
       <LanguageSelector />
-
     </S.FooterContainer>
   );
 };

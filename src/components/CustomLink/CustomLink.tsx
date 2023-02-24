@@ -7,8 +7,8 @@ export const CustomLink: FC<CustomLinksProps> = ({
   children,
   isExternal,
   ...options
-}) => {
-  return isExternal ? (
+}) =>
+  isExternal ? (
     <S.Anchor href={options.to} target="_blank">
       <S.CustomLinkContainer>{children}</S.CustomLinkContainer>
     </S.Anchor>
@@ -17,4 +17,3 @@ export const CustomLink: FC<CustomLinksProps> = ({
       <S.CustomLinkContainer>{children}</S.CustomLinkContainer>
     </Link>
   );
-};

@@ -9,23 +9,21 @@ import * as S from './styles';
 export const About: FC = () => {
   const { t } = useTranslation(namespaces.about);
   const navigate = useNavigate();
-  return(
+  return (
     <S.AboutContainer>
-    <S.AboutVideoContainer>
-      <S.Video autoPlay loop muted src={wineVideo} />
-    </S.AboutVideoContainer>
-    <S.AboutContent>
-      <S.AboutTitle>
+      <S.AboutVideoContainer>
+        <S.Video autoPlay loop muted src={wineVideo} />
+      </S.AboutVideoContainer>
+      <S.AboutContent>
+        <S.AboutTitle>
           {t('texts.beWine')}
-          <span>
-            {t('texts.signUp')}
-          </span>
-          <span>
-            {t('texts.signUpBonus')}
-          </span>
-        <S.Button onClick={() => navigate('/signup')}>{t('texts.signUpBtn')}</S.Button>
-      </S.AboutTitle>
-    </S.AboutContent>
-  </S.AboutContainer>
+          <span>{t('texts.signUp')}</span>
+          <span>{t('texts.signUpBonus')}</span>
+          <S.Button onClick={() => navigate('/signup')}>
+            {t('texts.signUpBtn')}
+          </S.Button>
+        </S.AboutTitle>
+      </S.AboutContent>
+    </S.AboutContainer>
   );
-}
+};

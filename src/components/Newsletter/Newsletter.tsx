@@ -12,8 +12,8 @@ export const Newsletter = () => {
           <p>{t('texts.signUpBonus')}</p>
         </S.NewsletterTitle>
         <input type="text" placeholder={t('texts.signUpPlaceholder')} />
-        <button>{t('texts.signUpBtn')}</button>
+        <button type="button">{t('texts.signUpBtn')}</button>
       </S.NewsletterWrapper>
     </S.NewsletterContainer>
   );
-}
+};
